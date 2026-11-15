@@ -81,8 +81,8 @@ button{transition:translate .3s var(--ease),scale .2s,filter .25s,box-shadow .3s
 .custom-callout{position:relative;overflow:hidden;text-align:center;background:radial-gradient(circle at 85% 10%,#f8d4df 0,transparent 32%),linear-gradient(135deg,#fff,#fce7ec);border:1px solid #f2d6df;border-radius:30px;padding:clamp(28px,5vw,54px);box-shadow:0 20px 50px rgba(111,41,66,.15)}
 .custom-callout::before,.custom-callout::after{content:"";position:absolute;border-radius:50%;pointer-events:none;animation:blob 9s ease-in-out infinite alternate}.custom-callout::before{width:280px;height:280px;right:-70px;top:-90px;background:radial-gradient(circle,rgba(233,138,155,.38),transparent 65%)}.custom-callout::after{width:240px;height:240px;left:-60px;bottom:-90px;background:radial-gradient(circle,rgba(169,63,96,.22),transparent 65%);animation-delay:-4s}.custom-callout>*{position:relative;z-index:1}
 .custom-callout h2{font-size:clamp(2rem,5vw,3rem);color:var(--vinho)}.custom-callout .btn{background:linear-gradient(135deg,#a93f60,#7b2946);padding:16px 28px}.custom-callout p{max-width:700px;margin:10px auto}
-.custom-products{display:grid;gap:12px;margin:8px 0}.custom-product{display:grid;grid-template-columns:auto 64px minmax(150px,1fr) minmax(250px,1.35fr);gap:12px;align-items:center;background:#fff;border:1px solid #f0dce2;border-radius:16px;padding:12px;text-align:left;animation:fadeUp .5s var(--ease) backwards;transition:border-color .3s,box-shadow .3s,translate .3s var(--ease)}.custom-product:nth-child(2){animation-delay:.05s}.custom-product:nth-child(3){animation-delay:.1s}.custom-product:nth-child(4){animation-delay:.15s}.custom-product:nth-child(n+5){animation-delay:.2s}.custom-product:hover{translate:0 -2px;border-color:#e6bfcb}
-.custom-product img,.custom-placeholder{width:64px;height:64px;border-radius:12px;object-fit:cover;background:#f8e8ed;display:grid;place-items:center;color:#bd8191}.custom-product b{display:block;color:var(--vinho);font-weight:600}.custom-product input[type=number],.custom-product input[type=text],.custom-product select,.custom-product textarea{width:100%;padding:9px;border:1px solid #dec8cf;border-radius:9px;font:inherit;background:#fff}.custom-product textarea{min-height:64px;resize:vertical}.custom-product small{display:block;color:#806a73}.custom-product .select-product{width:19px;height:19px;accent-color:var(--rosa-escuro)}.custom-product:has(.select-product:checked){border-color:var(--rosa-escuro);box-shadow:0 0 0 2px #a93f6020}.custom-edit{display:grid;grid-template-columns:90px minmax(92px,1fr);gap:8px}.custom-edit .product-description{grid-column:1/-1}.measure-group{display:grid;grid-template-columns:1fr 66px;gap:6px}.request-message{width:100%;min-height:90px;padding:12px;border:1px solid #dec8cf;border-radius:11px;font:inherit;resize:vertical}
+.custom-products{display:grid;gap:12px;margin:8px 0}.custom-product{display:grid;grid-template-columns:24px 64px minmax(170px,1fr) minmax(430px,1.8fr);gap:12px;align-items:center;background:#fff;border:1px solid #f0dce2;border-radius:16px;padding:12px;text-align:left;animation:fadeUp .5s var(--ease) backwards;transition:border-color .3s,box-shadow .3s,translate .3s var(--ease)}.custom-product:nth-child(2){animation-delay:.05s}.custom-product:nth-child(3){animation-delay:.1s}.custom-product:nth-child(4){animation-delay:.15s}.custom-product:nth-child(n+5){animation-delay:.2s}.custom-product:hover{translate:0 -2px;border-color:#e6bfcb}
+.custom-product img,.custom-placeholder{width:64px;height:64px;border-radius:12px;object-fit:cover;background:#f8e8ed;display:grid;place-items:center;color:#bd8191}.custom-product b{display:block;color:var(--vinho);font-weight:600}.custom-product input[type=number],.custom-product select,.custom-product textarea{width:100%;padding:9px;border:1px solid #dec8cf;border-radius:9px;font:inherit;background:#fff}.custom-product textarea{min-height:70px;resize:vertical}.custom-edit{display:grid;grid-template-columns:100px minmax(170px,1fr);gap:10px;align-items:start}.custom-edit label{display:grid;gap:4px}.custom-edit .product-description{grid-column:1/-1}.measure-group{display:grid;grid-template-columns:minmax(80px,1fr) 70px;gap:6px}.custom-product small{display:block;color:#806a73}.custom-product .select-product{width:19px;height:19px;accent-color:var(--rosa-escuro)}.custom-product:has(.select-product:checked){border-color:var(--rosa-escuro);box-shadow:0 0 0 2px #a93f6020}.request-message{width:100%;min-height:90px;padding:12px;border:1px solid #dec8cf;border-radius:11px;font:inherit;resize:vertical}
 
 /* ---------- Carrinho, toast, topo ---------- */
 .cart{position:fixed;right:18px;bottom:18px;z-index:15;border:0;border-radius:99px;background:linear-gradient(135deg,var(--vinho),#8d3a58);color:#fff;padding:14px 18px;font-weight:700;cursor:pointer;box-shadow:0 12px 28px rgba(111,41,66,.38)}.cart:hover{translate:0 -4px;box-shadow:0 18px 34px rgba(111,41,66,.45)}.cart.bump{animation:bump .55s var(--ease)}
@@ -92,7 +92,8 @@ footer{background:linear-gradient(135deg,var(--vinho),#8d3a58,var(--vinho));back
 
 /* ---------- Modais ---------- */
 .modal{position:fixed;inset:0;z-index:100;display:none;place-items:center;padding:20px;background:rgba(54,24,35,.62)}.modal.open{display:grid;animation:fadeIn .3s ease backwards;backdrop-filter:blur(6px)}.modal.open .modal-box{animation:popIn .55s var(--ease) backwards}
-.modal-box{position:relative;width:min(620px,100%);max-height:92vh;overflow:auto;background:var(--creme);border-radius:24px;padding:30px;box-shadow:0 25px 80px rgba(0,0,0,.3)}.modal-close{position:absolute;right:16px;top:12px;border:0;background:transparent;color:var(--vinho);font-size:2rem;cursor:pointer;transition:rotate .4s var(--ease),scale .2s}.modal-close:hover{rotate:90deg;scale:1.15}
+.modal-box{position:relative;width:min(620px,100%);max-height:92vh;overflow:auto;background:var(--creme);border-radius:24px;padding:30px;box-shadow:0 25px 80px rgba(0,0,0,.3)}#customModal .modal-box{width:min(1040px,96vw);padding:34px}#customModal .custom-form{grid-template-columns:1fr}#customModal .form-actions{grid-column:auto}
+.modal-close{position:absolute;right:16px;top:12px;border:0;background:transparent;color:var(--vinho);font-size:2rem;cursor:pointer;transition:rotate .4s var(--ease),scale .2s}.modal-close:hover{rotate:90deg;scale:1.15}
 .modal-box h2{color:var(--vinho);margin-right:35px}.modal-box>p,.modal-box>div>p{margin:8px 0 20px}.custom-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:600;color:var(--vinho)}.hint{font-size:.78rem;color:#755e67}.form-actions{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap}.form-actions button{flex:1;min-width:180px}.form-actions .secondary{background:#fff;color:var(--vinho);border:1px solid #dec8cf}
 #checkoutStep1:not([hidden]),#checkoutDone:not([hidden]){animation:fadeUp .5s var(--ease) backwards}
 .cart-list{display:grid;gap:12px;margin:20px 0}.cart-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;background:#fff;padding:13px;border-radius:14px;animation:fadeUp .5s var(--ease) backwards;animation-delay:calc(var(--i,0)*.06s)}.cart-row h3{font-family:Poppins,sans-serif;font-size:1rem}.cart-row small{color:#755e67;display:block}.remove-item{border:0;background:#f7dce3;color:var(--vinho);width:35px;height:35px;border-radius:50%;cursor:pointer}.remove-item:hover{background:#f2c3cf;rotate:90deg}.cart-total{text-align:right;font-size:1.25rem;font-weight:700;color:var(--vinho);margin:15px 0}.empty-cart{text-align:center;padding:28px;background:#fff;border-radius:14px;color:#755e67}.cart-actions{display:flex;gap:10px;flex-wrap:wrap}.cart-actions button{flex:1;min-width:180px;padding:12px;border-radius:12px;border:0;font:600 1rem Poppins,sans-serif;cursor:pointer}.cart-actions button:disabled{opacity:.5;cursor:not-allowed}.cart-actions .clear{background:#eee3e7;color:var(--vinho)}.cart-actions .checkout{background:var(--rosa-escuro);color:#fff}.cart-actions .whats{background:#249d5a;color:#fff}
@@ -101,7 +102,7 @@ footer{background:linear-gradient(135deg,var(--vinho),#8d3a58,var(--vinho));back
 .done-check{width:74px;height:74px;margin:0 auto 12px}.done-check svg{width:100%;height:100%;stroke:#249d5a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.done-check circle{stroke-dasharray:152;stroke-dashoffset:152;animation:draw .7s var(--ease) .1s forwards}.done-check path{stroke-dasharray:40;stroke-dashoffset:40;animation:draw .5s var(--ease) .65s forwards}
 .spin{display:inline-block;width:14px;height:14px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:spin .7s linear infinite;vertical-align:-2px;margin-right:8px}button:disabled{opacity:.7;cursor:wait}
 
-@media(max-width:650px){.custom-product{grid-template-columns:auto 54px 1fr}.custom-edit{grid-column:2/-1;grid-template-columns:1fr}.custom-edit .product-description{grid-column:auto}.custom-product img,.custom-placeholder{width:54px;height:54px}.custom-product>div:last-child{grid-column:2/-1}.nav{flex-direction:column;padding:10px}nav{font-size:.86rem;gap:13px;flex-wrap:wrap;justify-content:center}.hero,.slide{min-height:72vh;height:72vh}.slide{width:78vw}.carousel{animation-duration:32s}.custom-form{grid-template-columns:1fr}.field.full,.form-actions{grid-column:auto}.modal-box{padding:24px 18px}.pay-options{grid-template-columns:1fr}.scroll-cue{bottom:78px}#toTop{bottom:72px}}
+@media(max-width:650px){#customModal .modal-box{width:100%;padding:24px 16px}.custom-product{grid-template-columns:24px 54px 1fr}.custom-edit{grid-column:2/-1;grid-template-columns:1fr}.custom-edit .product-description{grid-column:auto}.custom-product img,.custom-placeholder{width:54px;height:54px}.custom-product>div:last-child{grid-column:2/-1}.nav{flex-direction:column;padding:10px}nav{font-size:.86rem;gap:13px;flex-wrap:wrap;justify-content:center}.hero,.slide{min-height:72vh;height:72vh}.slide{width:78vw}.carousel{animation-duration:32s}.custom-form{grid-template-columns:1fr}.field.full,.form-actions{grid-column:auto}.modal-box{padding:24px 18px}.pay-options{grid-template-columns:1fr}.scroll-cue{bottom:78px}#toTop{bottom:72px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.carousel{animation:none}.bubbles{display:none}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -153,9 +154,10 @@ footer{background:linear-gradient(135deg,var(--vinho),#8d3a58,var(--vinho));back
 </div></div></div>
 
 <!-- PEDIDO PERSONALIZADO -->
-<div class="modal" id="customModal" role="dialog" aria-modal="true" aria-labelledby="customTitle"><div class="modal-box"><button class="modal-close" id="closeCustom" type="button" aria-label="Fechar">&times;</button><h2 id="customTitle">Pedido personalizado</h2><p>Escolha os produtos que servirão de base, ajuste as unidades e descreva o que deseja.</p>
+<div class="modal" id="customModal" role="dialog" aria-modal="true" aria-labelledby="customTitle"><div class="modal-box custom-modal-box"><button class="modal-close" id="closeCustom" type="button" aria-label="Fechar">&times;</button><h2 id="customTitle">Pedido personalizado</h2><p>Escolha os produtos que servirão de base, ajuste as unidades e descreva o que deseja.</p>
 <form class="custom-form" id="customForm">
 <div class="field full"><label>Produtos base</label><div id="customProducts" class="custom-products"></div></div>
+<div class="field full"><label for="customDesc">Pedido livre ou necessidade adicional</label><textarea id="customDesc" class="request-message" maxlength="500" placeholder="Se nenhum produto atender totalmente, descreva livremente o que você deseja. Ex.: tipo de produto, aroma, tamanho, cor, finalidade ou embalagem."></textarea><span class="hint">Este campo é opcional e será enviado junto com o pedido.</span></div>
 <div class="form-actions"><button type="submit"><i class="fa-solid fa-bag-shopping"></i> Adicionar ao pedido</button></div>
 </form></div></div>
 
@@ -235,12 +237,12 @@ function addToCart(p,q){
   else cart.push({key,id:p.id,nome:p.produto,preco:+p.preco||0,quantidade:q,estoque:+p.quantidade_estoque||0,personalizado:false,obs:''});
   updateCartBadge();toast('Adicionado ao carrinho ✓');
 }
-function addCustomToCart(p,q,desc,medida,unidade){
-  cart.push({key:'c-'+p.id+'-'+Date.now()+'-'+Math.random().toString(36).slice(2,6),id:p.id,nome:p.produto,preco:+p.preco||0,quantidade:q,estoque:Infinity,personalizado:true,obs:desc,medida,unidade});
+function addCustomToCart(p,q,desc,medida,unidade,pedidoLivre){
+  cart.push({key:'c-'+p.id+'-'+Date.now()+'-'+Math.random().toString(36).slice(2,6),id:p.id,nome:p.produto,preco:+p.preco||0,quantidade:q,estoque:Infinity,personalizado:true,obs:desc,medida,unidade,pedidoLivre});
   updateCartBadge();
 }
 function itemRowHtml(i,n,removable){
-  return `<div class="cart-row" style="--i:${n}"><div><h3>${esc(i.nome)}${i.personalizado?' <small style="display:inline">(personalizado)</small>':''}</h3><small>${i.quantidade} × ${money.format(i.preco)} = ${money.format(i.quantidade*i.preco)}</small>${i.personalizado?`<small>Medida por unidade: ${esc(i.medida)} ${esc(i.unidade)}</small><small>Descrição do cliente: ${esc(i.obs||'Sem descrição')}</small>`:''}</div>${removable?`<button class="remove-item" type="button" data-index="${n}" aria-label="Remover ${esc(i.nome)}"><i class="fa-solid fa-xmark"></i></button>`:''}</div>`;
+  return `<div class="cart-row" style="--i:${n}"><div><h3>${esc(i.nome)}${i.personalizado?' <small style="display:inline">(personalizado)</small>':''}</h3><small>${i.quantidade} × ${money.format(i.preco)} = ${money.format(i.quantidade*i.preco)}</small>${i.personalizado?`<small>Medida por unidade: ${esc(i.medida)} ${esc(i.unidade)}</small><small>Descrição do produto: ${esc(i.obs||'Sem descrição específica')}</small>${i.pedidoLivre?`<small>Pedido livre: ${esc(i.pedidoLivre)}</small>`:''}`:''}</div>${removable?`<button class="remove-item" type="button" data-index="${n}" aria-label="Remover ${esc(i.nome)}"><i class="fa-solid fa-xmark"></i></button>`:''}</div>`;
 }
 function renderCart(){
   const empty=!cart.length;
@@ -259,7 +261,7 @@ $('#clearCart').onclick=()=>{cart=[];updateCartBadge();renderCart()};
 
 /* ---------- Checkout ---------- */
 function itemsText(){
-  return cart.map(i=>`${i.quantidade}x ${i.nome}${i.personalizado?' ('+i.medida+' '+i.unidade+' por unidade; descrição: '+(i.obs||'sem descrição')+')':''}`).join('; ');
+  return cart.map(i=>`${i.quantidade}x ${i.nome}${i.personalizado?' ('+i.medida+' '+i.unidade+' por unidade; descrição: '+(i.obs||'sem descrição')+(i.pedidoLivre?'; pedido livre: '+i.pedidoLivre:'')+')':''}`).join('; ');
 }
 function openCheckout(){
   if(!cart.length)return;
@@ -283,7 +285,7 @@ $('#checkoutForm').addEventListener('submit',async e=>{
     if(!client)throw new Error('O catálogo está em modo demonstração: configure o Supabase para registrar pedidos.');
     const cliente=$('#coCliente').value.trim(),pay=document.querySelector('input[name=pay]:checked').value,obs=$('#coObs').value.trim();
     const total=+cartTotalValue().toFixed(2);
-    const linhas=cart.map(i=>`• ${i.nome} — ${i.quantidade} un. — ${money.format(i.preco*i.quantidade)}${i.personalizado?'\n   Medida por unidade: '+i.medida+' '+i.unidade+'\n   Descrição do cliente: '+(i.obs||'-'):''}`);
+    const linhas=cart.map(i=>`• ${i.nome} — ${i.quantidade} un. — ${money.format(i.preco*i.quantidade)}${i.personalizado?'\n   Medida por unidade: '+i.medida+' '+i.unidade+'\n   Descrição: '+(i.obs||'-')+(i.pedidoLivre?'\n   Pedido livre: '+i.pedidoLivre:''):''}`);
     const row={data_venda:todayLocal(),cliente,produto_descricao:itemsText(),quantidade:1,valor_unitario:total,desconto:0,forma_pagamento:pay,status:'Pendente',observacoes:obs};
     const {data,error}=await client.from('lancamentos_vendas').insert(row).select('id').single();
     if(error)throw error;
@@ -343,11 +345,8 @@ let customList=[];
 function renderCustomProducts(){
   const root=$('#customProducts');if(!root)return;
   customList=catalog.filter(p=>p.ativo!==false&&p.permite_personalizacao!==false);
-  root.innerHTML=customList.map((p,i)=>{
-    const src=imageUrl(p.imagem_supabase_url||p.imagem_url);
-    return `<article class="custom-product"><input class="select-product" type="checkbox" data-index="${i}" aria-label="Selecionar ${esc(p.produto)}">${src?`<img src="${esc(src)}" alt="${esc(p.produto)}" onerror="this.hidden=true">`:'<span class="custom-placeholder">✿</span>'}<div><b>${esc(p.produto)}</b><small>${esc(p.descricao||'Artesanal Luli')}</small><small>${money.format(+p.preco||0)} cada</small></div><div class="custom-edit"><label><small>Unidades</small><input class="custom-quantity" type="number" min="1" max="999" step="1" value="1"></label><label><small>Gramas ou ml por unidade</small><span class="measure-group"><input class="custom-measure" type="number" min="1" max="99999" step="1" value="100"><select class="custom-unit" aria-label="Unidade de medida"><option value="g">g</option><option value="ml">ml</option></select></span></label><label class="product-description"><small>Descrição do cliente para este produto</small><textarea class="custom-description" maxlength="300" placeholder="Ex.: lavanda, embalagem para presente, tom rosado..."></textarea></label></div></article>`;
-  }).join('')||'<p class="hint">Nenhum produto está habilitado para personalização no momento.</p>';
-  root.querySelectorAll('.custom-product input,.custom-product select,.custom-product textarea').forEach(inp=>inp.addEventListener('input',()=>{if(!inp.classList.contains('select-product'))inp.closest('.custom-product').querySelector('.select-product').checked=true}));
+  root.innerHTML=customList.map((p,i)=>{const src=imageUrl(p.imagem_supabase_url||p.imagem_url);return `<article class="custom-product"><input class="select-product" type="checkbox" data-index="${i}" aria-label="Selecionar ${esc(p.produto)}">${src?`<img src="${esc(src)}" alt="${esc(p.produto)}" onerror="this.hidden=true">`:'<span class="custom-placeholder">✿</span>'}<div><b>${esc(p.produto)}</b><small>${esc(p.descricao||'Artesanal Luli')}</small><small>${money.format(+p.preco||0)} cada</small></div><div class="custom-edit"><label><small>Unidades</small><input class="custom-quantity" type="number" min="1" max="999" step="1" value="1"></label><label><small>Gramas ou ml por unidade</small><span class="measure-group"><input class="custom-measure" type="number" min="1" max="99999" step="1" value="100"><select class="custom-unit"><option value="g">g</option><option value="ml">ml</option></select></span></label><label class="product-description"><small>Descrição para este produto</small><textarea class="custom-description" maxlength="300" placeholder="Ex.: lavanda, embalagem para presente, tom rosado..."></textarea></label></div></article>`}).join('')||'<p class="hint">Nenhum produto está habilitado para personalização no momento.</p>';
+  root.querySelectorAll('.custom-product input,.custom-product select,.custom-product textarea').forEach(el=>el.addEventListener('input',()=>{if(!el.classList.contains('select-product'))el.closest('.custom-product').querySelector('.select-product').checked=true}));
 }
 $('#openCustom').onclick=()=>{openM(customModal);setTimeout(()=>$('.select-product')?.focus(),50)};
 function closeCustom(){closeM(customModal);$('#openCustom').focus()}
@@ -357,6 +356,7 @@ $('#customForm').addEventListener('submit',e=>{
   e.preventDefault();
   const chosen=[...document.querySelectorAll('.custom-product')].filter(c=>c.querySelector('.select-product').checked);
   if(!chosen.length){alert('Escolha ao menos um produto como base.');return}
+  const pedidoLivre=$('#customDesc').value.trim();
   let invalid=false;
   chosen.forEach(c=>{
     const p=customList[+c.querySelector('.select-product').dataset.index];
@@ -364,10 +364,10 @@ $('#customForm').addEventListener('submit',e=>{
     const medida=Math.max(1,parseFloat(c.querySelector('.custom-measure').value)||0);
     const unidade=c.querySelector('.custom-unit').value;
     const desc=c.querySelector('.custom-description').value.trim();
-    if(!desc||!medida){invalid=true;return}
-    addCustomToCart(p,q,desc,medida,unidade);
+    if(!medida){invalid=true;return}
+    addCustomToCart(p,q,desc,medida,unidade,pedidoLivre);
   });
-  if(invalid){alert('Informe a medida e a descrição de cada produto selecionado.');return}
+  if(invalid){alert('Informe uma medida válida para cada produto selecionado.');return}
   $('#customForm').reset();
   closeM(customModal);
   toast('Itens personalizados adicionados ✓');
