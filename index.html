@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Cosméticos Luli">
 <title>Luli</title>
+<link rel="icon" type="image/png" href="./icon.png">
+<link rel="shortcut icon" type="image/png" href="./icon.png">
+<link rel="apple-touch-icon" href="./icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,9 +19,16 @@
 header{position:sticky;top:0;z-index:20;background:rgba(255,250,246,.94);backdrop-filter:blur(12px);border-bottom:1px solid #ead7dd}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--vinho)}.brand img{width:58px;height:58px;object-fit:contain;border-radius:50%}.brand b,h1,h2,h3{font-family:'Playfair Display',serif}nav{display:flex;gap:20px;align-items:center}nav a{text-decoration:none;color:var(--vinho);font-weight:600}
 .hero{position:relative;min-height:82vh;overflow:hidden;display:grid;place-items:center;text-align:center;color:white;background:var(--vinho)}.carousel{position:absolute;inset:0;display:flex;width:max-content;animation:slide 42s linear infinite;will-change:transform}.carousel-set{display:flex}.slide{width:clamp(310px,34vw,540px);height:82vh;flex:none}.slide img{width:100%;height:100%;object-fit:cover;filter:saturate(.88) contrast(.92)}.hero::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(54,24,35,.78),rgba(111,41,66,.33) 45%,rgba(54,24,35,.72)),linear-gradient(0deg,rgba(54,24,35,.72),transparent 55%,rgba(54,24,35,.3));backdrop-filter:blur(1.2px)}.hero-content{position:relative;z-index:3;padding:70px 0;text-shadow:0 3px 18px rgba(0,0,0,.35)}.hero-logo{width:min(180px,48vw);filter:drop-shadow(0 10px 18px rgba(0,0,0,.2));border-radius:50%}.hero h1{font-size:clamp(2.7rem,7vw,5.2rem);line-height:1;margin:18px 0}.hero p{max-width:680px;margin:auto}.btn{display:inline-block;margin-top:26px;padding:14px 24px;border:0;border-radius:99px;background:var(--rosa-escuro);color:#fff;text-decoration:none;font:600 1rem Poppins,sans-serif;box-shadow:var(--sombra);cursor:pointer}
 @keyframes slide{to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.carousel{animation:none}}
-section{padding:78px 0}.title{text-align:center;margin-bottom:34px}.title h2{font-size:clamp(2rem,5vw,3rem);color:var(--vinho)}#status{width:min(760px,100%);margin:0 auto 20px;text-align:center;background:#fff;padding:8px 14px;border-radius:10px;font-size:.9rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}.card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--sombra);padding-top:22px}.pic{width:170px;height:170px;margin:0 auto;display:grid;place-items:center;background:#fff;border:7px solid #f8e8ed;border-radius:50%;box-shadow:0 8px 22px rgba(111,41,66,.14);overflow:hidden}.pic img{width:100%;height:100%;object-fit:cover;padding:0;border-radius:50%}.pic i{font-size:4.5rem;color:#dba1af}.info{padding:20px;text-align:center}.info h3{font-size:1.4rem;color:var(--vinho)}.desc{min-height:48px;margin:7px 0;color:#755e67;font-size:.92rem}.stock{font-size:.82rem}.price{font-size:1.4rem;font-weight:700;color:var(--rosa-escuro);margin-top:8px}.actions{display:grid;grid-template-columns:76px 1fr;gap:9px;margin-top:14px}.actions input,.actions button,.custom-form input,.custom-form select,.custom-form button{padding:11px;border-radius:11px;font:inherit}.actions input,.custom-form input,.custom-form select{border:1px solid #dec8cf;background:#fff}.actions button,.custom-form button{border:0;background:var(--rosa-escuro);color:#fff;font-weight:600;cursor:pointer}.actions button:disabled{opacity:.5}.custom-callout{text-align:center;background:radial-gradient(circle at 85% 10%,#f8d4df 0,transparent 32%),linear-gradient(135deg,#fff,#fce7ec);border:1px solid #f2d6df;border-radius:30px;padding:clamp(28px,5vw,54px);box-shadow:0 20px 50px rgba(111,41,66,.15)}.custom-callout h2{font-size:clamp(2rem,5vw,3rem);color:var(--vinho)}.custom-callout .btn{background:linear-gradient(135deg,#a93f60,#7b2946);padding:16px 28px;transition:transform .2s,box-shadow .2s}.custom-callout .btn:hover{transform:translateY(-3px);box-shadow:0 14px 28px #6f294255}.custom-products{display:grid;gap:12px;margin:18px 0}.custom-product{display:grid;grid-template-columns:76px 1fr 105px 84px;gap:12px;align-items:center;background:#fff;border:1px solid #f0dce2;border-radius:16px;padding:12px;text-align:left}.custom-product img,.custom-placeholder{width:76px;height:76px;border-radius:12px;object-fit:cover;background:#f8e8ed;display:grid;place-items:center;color:#bd8191}.custom-product label{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--vinho)}.custom-product input[type=number]{width:100%;padding:9px;border:1px solid #dec8cf;border-radius:9px;font:inherit}.custom-product small{display:block;color:#806a73}.custom-product .select-product{width:19px;height:19px;accent-color:var(--rosa-escuro)}.request-toggle{display:flex;align-items:flex-start;gap:10px;background:#fff;border:1px dashed #d9b8c2;border-radius:14px;padding:14px}.request-toggle input{margin-top:5px;accent-color:var(--rosa-escuro)}.request-message{width:100%;min-height:85px;padding:12px;border:1px solid #dec8cf;border-radius:11px;font:inherit}.custom-product:has(.select-product:checked){border-color:var(--rosa-escuro);box-shadow:0 0 0 2px #a93f6020}.custom-callout p{max-width:700px;margin:10px auto}.cart{position:fixed;right:18px;bottom:18px;z-index:15;border:0;border-radius:99px;background:var(--vinho);color:#fff;padding:14px 18px;font-weight:700}footer{background:var(--vinho);color:#fff;text-align:center;padding:50px 0}.social{display:flex;justify-content:center;gap:16px;margin:20px}.social a{width:48px;height:48px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.45);border-radius:50%;font-size:1.4rem;color:#fff;text-decoration:none}
-.modal{position:fixed;inset:0;z-index:100;display:none;place-items:center;padding:20px;background:rgba(54,24,35,.65)}.modal.open{display:grid}.modal-box{position:relative;width:min(620px,100%);max-height:92vh;overflow:auto;background:var(--creme);border-radius:24px;padding:30px;box-shadow:0 25px 80px rgba(0,0,0,.3)}.modal-close{position:absolute;right:16px;top:12px;border:0;background:transparent;color:var(--vinho);font-size:2rem;cursor:pointer}.modal-box h2{color:var(--vinho);margin-right:35px}.modal-box>p{margin:8px 0 20px}.custom-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:600;color:var(--vinho)}.hint{font-size:.78rem;color:#755e67}.preview{white-space:pre-wrap;background:#fff;border:1px dashed #d9b8c2;border-radius:14px;padding:14px;min-height:100px}.form-actions{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap}.form-actions button{flex:1;min-width:180px}.form-actions .secondary{background:#fff;color:var(--vinho);border:1px solid #dec8cf}.cart-list{display:grid;gap:12px;margin:20px 0}.cart-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;background:#fff;padding:13px;border-radius:14px}.cart-row h3{font-family:Poppins,sans-serif;font-size:1rem}.cart-row small{color:#755e67}.remove-item{border:0;background:#f7dce3;color:var(--vinho);width:35px;height:35px;border-radius:50%;cursor:pointer}.cart-total{text-align:right;font-size:1.25rem;font-weight:700;color:var(--vinho);margin:15px 0}.empty-cart{text-align:center;padding:28px;background:#fff;border-radius:14px;color:#755e67}.cart-actions{display:flex;gap:10px;flex-wrap:wrap}.cart-actions button{flex:1;min-width:180px;padding:12px;border-radius:12px;border:0;font:600 1rem Poppins,sans-serif;cursor:pointer}.cart-actions .clear{background:#eee3e7;color:var(--vinho)}.cart-actions .whats{background:#249d5a;color:#fff}
-@media(max-width:650px){.custom-product{grid-template-columns:54px 1fr 78px}.custom-product img,.custom-placeholder{width:54px;height:54px}.custom-product>div:last-child{grid-column:2/-1}.nav{flex-direction:column;padding:10px}nav{font-size:.86rem;gap:13px;flex-wrap:wrap;justify-content:center}.hero,.slide{min-height:72vh;height:72vh}.slide{width:78vw}.carousel{animation-duration:32s}.custom-form{grid-template-columns:1fr}.field.full,.form-actions{grid-column:auto}.modal-box{padding:24px 18px}}
+section{padding:78px 0}.title{text-align:center;margin-bottom:34px}.title h2{font-size:clamp(2rem,5vw,3rem);color:var(--vinho)}#status{width:min(760px,100%);margin:0 auto 20px;text-align:center;background:#fff;padding:8px 14px;border-radius:10px;font-size:.9rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}.card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--sombra);padding-top:22px}.pic{width:170px;height:170px;margin:0 auto;display:grid;place-items:center;background:#fff;border:7px solid #f8e8ed;border-radius:50%;box-shadow:0 8px 22px rgba(111,41,66,.14);overflow:hidden}.pic img{width:100%;height:100%;object-fit:cover;padding:0;border-radius:50%}.pic i{font-size:4.5rem;color:#dba1af}.info{padding:20px;text-align:center}.info h3{font-size:1.4rem;color:var(--vinho)}.desc{min-height:48px;margin:7px 0;color:#755e67;font-size:.92rem}.stock{font-size:.82rem}.price{font-size:1.4rem;font-weight:700;color:var(--rosa-escuro);margin-top:8px}.actions{display:grid;grid-template-columns:76px 1fr;gap:9px;margin-top:14px}.actions input,.actions button,.custom-form input,.custom-form select,.custom-form button,.custom-form textarea{padding:11px;border-radius:11px;font:inherit}.actions input,.custom-form input,.custom-form select,.custom-form textarea{border:1px solid #dec8cf;background:#fff}.actions button,.custom-form button{border:0;background:var(--rosa-escuro);color:#fff;font-weight:600;cursor:pointer}.actions button:disabled{opacity:.5}
+.custom-callout{text-align:center;background:radial-gradient(circle at 85% 10%,#f8d4df 0,transparent 32%),linear-gradient(135deg,#fff,#fce7ec);border:1px solid #f2d6df;border-radius:30px;padding:clamp(28px,5vw,54px);box-shadow:0 20px 50px rgba(111,41,66,.15)}.custom-callout h2{font-size:clamp(2rem,5vw,3rem);color:var(--vinho)}.custom-callout .btn{background:linear-gradient(135deg,#a93f60,#7b2946);padding:16px 28px;transition:transform .2s,box-shadow .2s}.custom-callout .btn:hover{transform:translateY(-3px);box-shadow:0 14px 28px #6f294255}.custom-callout p{max-width:700px;margin:10px auto}
+.custom-products{display:grid;gap:12px;margin:8px 0}.custom-product{display:grid;grid-template-columns:auto 64px 1fr 92px;gap:12px;align-items:center;background:#fff;border:1px solid #f0dce2;border-radius:16px;padding:12px;text-align:left}.custom-product img,.custom-placeholder{width:64px;height:64px;border-radius:12px;object-fit:cover;background:#f8e8ed;display:grid;place-items:center;color:#bd8191}.custom-product b{display:block;color:var(--vinho);font-weight:600}.custom-product input[type=number]{width:100%;padding:9px;border:1px solid #dec8cf;border-radius:9px;font:inherit}.custom-product small{display:block;color:#806a73}.custom-product .select-product{width:19px;height:19px;accent-color:var(--rosa-escuro)}.custom-product:has(.select-product:checked){border-color:var(--rosa-escuro);box-shadow:0 0 0 2px #a93f6020}.request-message{width:100%;min-height:90px;padding:12px;border:1px solid #dec8cf;border-radius:11px;font:inherit;resize:vertical}
+.cart{position:fixed;right:18px;bottom:18px;z-index:15;border:0;border-radius:99px;background:var(--vinho);color:#fff;padding:14px 18px;font-weight:700;cursor:pointer}footer{background:var(--vinho);color:#fff;text-align:center;padding:50px 0}.social{display:flex;justify-content:center;gap:16px;margin:20px}.social a{width:48px;height:48px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.45);border-radius:50%;font-size:1.4rem;color:#fff;text-decoration:none}
+.modal{position:fixed;inset:0;z-index:100;display:none;place-items:center;padding:20px;background:rgba(54,24,35,.65)}.modal.open{display:grid}.modal-box{position:relative;width:min(620px,100%);max-height:92vh;overflow:auto;background:var(--creme);border-radius:24px;padding:30px;box-shadow:0 25px 80px rgba(0,0,0,.3)}.modal-close{position:absolute;right:16px;top:12px;border:0;background:transparent;color:var(--vinho);font-size:2rem;cursor:pointer}.modal-box h2{color:var(--vinho);margin-right:35px}.modal-box>p,.modal-box>div>p{margin:8px 0 20px}.custom-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:600;color:var(--vinho)}.hint{font-size:.78rem;color:#755e67}.form-actions{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap}.form-actions button{flex:1;min-width:180px}.form-actions .secondary{background:#fff;color:var(--vinho);border:1px solid #dec8cf}
+.cart-list{display:grid;gap:12px;margin:20px 0}.cart-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;background:#fff;padding:13px;border-radius:14px}.cart-row h3{font-family:Poppins,sans-serif;font-size:1rem}.cart-row small{color:#755e67;display:block}.remove-item{border:0;background:#f7dce3;color:var(--vinho);width:35px;height:35px;border-radius:50%;cursor:pointer}.cart-total{text-align:right;font-size:1.25rem;font-weight:700;color:var(--vinho);margin:15px 0}.empty-cart{text-align:center;padding:28px;background:#fff;border-radius:14px;color:#755e67}.cart-actions{display:flex;gap:10px;flex-wrap:wrap}.cart-actions button{flex:1;min-width:180px;padding:12px;border-radius:12px;border:0;font:600 1rem Poppins,sans-serif;cursor:pointer}.cart-actions button:disabled{opacity:.5;cursor:not-allowed}.cart-actions .clear{background:#eee3e7;color:var(--vinho)}.cart-actions .checkout{background:var(--rosa-escuro);color:#fff}.cart-actions .whats{background:#249d5a;color:#fff}
+.pay-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pay-options label{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #dec8cf;border-radius:12px;padding:11px;font-weight:500;color:var(--texto);cursor:pointer}.pay-options label:has(input:checked){border-color:var(--rosa-escuro);box-shadow:0 0 0 2px #a93f6020}.pay-options input{accent-color:var(--rosa-escuro)}
+.pix-box{background:#fff;border:1px dashed #d9b8c2;border-radius:14px;padding:16px;margin:16px 0;text-align:center}.pix-key{font-weight:700;word-break:break-all;color:var(--vinho);margin:6px 0 12px}.pix-value{font-size:1.5rem;font-weight:700;color:var(--rosa-escuro);margin:4px 0 12px}.pix-box button{border:0;border-radius:10px;padding:9px 14px;background:#eee3e7;color:var(--vinho);font:600 .9rem Poppins,sans-serif;cursor:pointer}.order-id{display:inline-block;background:#fce7ec;color:var(--vinho);font-weight:700;border-radius:99px;padding:6px 14px;margin-bottom:6px}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:spin .7s linear infinite;vertical-align:-2px;margin-right:8px}@keyframes spin{to{transform:rotate(360deg)}}button:disabled{opacity:.7;cursor:wait}
+@media(max-width:650px){.custom-product{grid-template-columns:auto 54px 1fr}.custom-product img,.custom-placeholder{width:54px;height:54px}.custom-product>div:last-child{grid-column:2/-1}.nav{flex-direction:column;padding:10px}nav{font-size:.86rem;gap:13px;flex-wrap:wrap;justify-content:center}.hero,.slide{min-height:72vh;height:72vh}.slide{width:78vw}.carousel{animation-duration:32s}.custom-form{grid-template-columns:1fr}.field.full,.form-actions{grid-column:auto}.modal-box{padding:24px 18px}.pay-options{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -26,37 +36,220 @@ section{padding:78px 0}.title{text-align:center;margin-bottom:34px}.title h2{fon
 <main>
 <section class="hero" id="inicio"><div class="carousel" aria-hidden="true"><div class="carousel-set"><div class="slide"><img src="banner-1.png" alt=""></div><div class="slide"><img src="banner-2.png" alt=""></div><div class="slide"><img src="banner-3.png" alt=""></div><div class="slide"><img src="banner-4.png" alt=""></div></div><div class="carousel-set"><div class="slide"><img src="banner-1.png" alt=""></div><div class="slide"><img src="banner-2.png" alt=""></div><div class="slide"><img src="banner-3.png" alt=""></div><div class="slide"><img src="banner-4.png" alt=""></div></div></div><div class="container hero-content"><img class="hero-logo" src="icon.png" alt="Logo Cosméticos Luli"><h1>Feito à mão com amor</h1><p>Perfume, cuidado e delicadeza para seu lar.</p><a class="btn" href="#produtos"><i class="fa-solid fa-spa"></i> Ver produtos</a></div></section>
 <section id="produtos"><div class="container"><div class="title"><h2>Nossos produtos</h2><p>Os produtos cadastrados são carregados automaticamente do catálogo.</p></div><div id="status" role="status">Carregando produtos...</div><div class="grid" id="grid"></div></div></section>
-<section id="personalizado"><div class="container"><div class="custom-callout"><h2>Monte seu pedido personalizado</h2><p>Escolha o tipo de sabonete, a fragrância, o peso e a quantidade de unidades. A mensagem será preparada para você enviar pelo WhatsApp.</p><button class="btn" id="openCustom" type="button"><i class="fa-brands fa-whatsapp"></i> Criar pedido personalizado</button></div></div></section>
+<section id="personalizado"><div class="container"><div class="custom-callout"><h2>Monte seu pedido personalizado</h2><p>Escolha um ou mais produtos como base, ajuste as unidades e descreva o que deseja personalizar. Os itens entram no seu carrinho para você finalizar o pedido.</p><button class="btn" id="openCustom" type="button"><i class="fa-solid fa-wand-magic-sparkles"></i> Criar pedido personalizado</button></div></div></section>
 </main>
 <button class="cart" type="button" aria-label="Itens no pedido"><i class="fa-solid fa-bag-shopping"></i> <span>0 itens</span></button>
 <footer id="contato"><div class="container"><h2>Fale com a Luli</h2><div class="social"><a href="https://www.instagram.com/saboaria_luli?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a class="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a><a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Maps"><i class="fa-brands fa-google"></i></a></div><small>© <span id="year"></span> Luli Saboaria Artesanal</small></div></footer>
-<div class="modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="modal-box"><button class="modal-close" id="closeCart" type="button" aria-label="Fechar">&times;</button><h2 id="cartTitle">Seu carrinho</h2><p>Revise os itens antes de gerar o pedido.</p><div id="cartList" class="cart-list"></div><div id="cartTotal" class="cart-total"></div><div class="cart-actions"><button class="clear" id="clearCart" type="button"><i class="fa-solid fa-trash"></i> Limpar carrinho</button><button class="whats" id="sendCart" type="button"><i class="fa-brands fa-whatsapp"></i> Gerar pedido no WhatsApp</button></div></div></div>
-<div class="modal" id="customModal" role="dialog" aria-modal="true" aria-labelledby="customTitle"><div class="modal-box"><button class="modal-close" id="closeCustom" type="button" aria-label="Fechar">&times;</button><h2 id="customTitle">Pedido personalizado</h2><p>Preencha as opções abaixo. Você poderá revisar a mensagem antes de abrir o WhatsApp.</p><form class="custom-form" id="customForm"><div class="field full"><label>Escolha os produtos e personalize o volume</label><span class="hint" id="volumeHint"></span><div id="customProducts" class="custom-products"></div></div><div class="field full"><label class="request-toggle"><input id="unknownProduct" type="checkbox"><span><b>Não encontrou o que procura?</b><br>Conte pra gente o que precisa. Quem sabe conseguimos arrumar... 😉</span></label><textarea id="requestText" class="request-message" maxlength="300" placeholder="Descreva o produto que você está procurando" hidden></textarea></div><div class="field full"><label for="notes">Observações do pedido</label><input id="notes" type="text" maxlength="180" placeholder="Fragrância, embalagem ou outra preferência"></div><div class="field full"><label>Prévia da mensagem</label><div class="preview" id="messagePreview"></div></div><div class="form-actions"><button class="secondary" id="copyMessage" type="button"><i class="fa-regular fa-copy"></i> Copiar mensagem</button><button type="submit"><i class="fa-brands fa-whatsapp"></i> Gerar pedido no WhatsApp</button></div></form></div></div>
+
+<!-- CARRINHO -->
+<div class="modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="modal-box"><button class="modal-close" id="closeCart" type="button" aria-label="Fechar">&times;</button><h2 id="cartTitle">Seu carrinho</h2><p>Revise os itens antes de finalizar.</p><div id="cartList" class="cart-list"></div><div id="cartTotal" class="cart-total"></div><div class="cart-actions"><button class="clear" id="clearCart" type="button"><i class="fa-solid fa-trash"></i> Limpar carrinho</button><button class="checkout" id="goCheckout" type="button"><i class="fa-solid fa-check"></i> Finalizar pedido</button></div></div></div>
+
+<!-- CHECKOUT -->
+<div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="modal-box">
+<button class="modal-close" id="closeCheckout" type="button" aria-label="Fechar">&times;</button>
+<div id="checkoutStep1">
+<h2 id="checkoutTitle">Finalizar pedido</h2><p>Confira seu pedido, informe seus dados e a forma de pagamento.</p>
+<div id="checkoutItems" class="cart-list"></div><div id="checkoutTotal" class="cart-total"></div>
+<form class="custom-form" id="checkoutForm">
+<div class="field full"><label for="coCliente">Seu nome</label><input id="coCliente" type="text" maxlength="120" required autocomplete="name" placeholder="Nome completo"></div>
+<div class="field full"><label>Forma de pagamento</label><div class="pay-options">
+<label><input type="radio" name="pay" value="Pix" checked> Pix</label>
+<label><input type="radio" name="pay" value="Cartão de crédito"> Cartão de crédito</label>
+<label><input type="radio" name="pay" value="Cartão de débito"> Cartão de débito</label>
+<label><input type="radio" name="pay" value="Dinheiro"> Dinheiro</label></div>
+<span class="hint">O pagamento é combinado direto com a Luli pelo WhatsApp. Se escolher Pix, a chave aparece ao finalizar.</span></div>
+<div class="field full"><label for="coObs">Observações</label><input id="coObs" type="text" maxlength="250" placeholder="Fragrância, embalagem, retirada ou outra preferência"></div>
+<div class="form-actions"><button class="secondary" id="backToCart" type="button"><i class="fa-solid fa-arrow-left"></i> Voltar ao carrinho</button><button id="coSubmit" type="submit"><i class="fa-solid fa-check"></i> Finalizar pedido</button></div>
+</form></div>
+<div id="checkoutDone" hidden>
+<span class="order-id" id="doneId"></span>
+<h2>Pedido registrado!</h2><p id="doneInfo"></p>
+<div class="pix-box" id="pixBox" hidden><small>Chave Pix</small><div class="pix-key" id="pixKey"></div><small>Valor a pagar</small><div class="pix-value" id="pixValue"></div><button id="copyPix" type="button"><i class="fa-regular fa-copy"></i> Copiar chave Pix</button></div>
+<div class="cart-actions"><button class="whats" id="trackBtn" type="button"><i class="fa-brands fa-whatsapp"></i> Acompanhar meu pedido no WhatsApp</button></div>
+</div></div></div>
+
+<!-- PEDIDO PERSONALIZADO -->
+<div class="modal" id="customModal" role="dialog" aria-modal="true" aria-labelledby="customTitle"><div class="modal-box"><button class="modal-close" id="closeCustom" type="button" aria-label="Fechar">&times;</button><h2 id="customTitle">Pedido personalizado</h2><p>Escolha os produtos que servirão de base, ajuste as unidades e descreva o que deseja.</p>
+<form class="custom-form" id="customForm">
+<div class="field full"><label>Produtos base</label><div id="customProducts" class="custom-products"></div></div>
+<div class="field full"><label for="customDesc">Descrição da personalização</label><textarea id="customDesc" class="request-message" maxlength="300" required placeholder="Ex.: fragrância de lavanda, embalagem para presente, tom rosado..."></textarea></div>
+<div class="form-actions"><button type="submit"><i class="fa-solid fa-bag-shopping"></i> Adicionar ao pedido</button></div>
+</form></div></div>
+
 <script>
 const SUPABASE_URL='https://hwsqntesvlqwpsjfeica.supabase.co';
 const SUPABASE_ANON_KEY='sb_publishable_V16Zh3W6yjflEXOpypWzPw_-djx67tE';
 const WHATSAPP_NUMBER='5519998836283';
+const PIX_KEY='COLE_AQUI_A_CHAVE_PIX'; // Chave Pix exibida ao finalizar o pedido (CPF, CNPJ, e-mail, telefone ou aleatória)
 const GITHUB_IMAGE_BASE=''; // Ex.: https://raw.githubusercontent.com/usuario/repositorio/main/imagens/
-const demo=[{produto:'Sabonete Floral',descricao:'Aroma delicado e acabamento artesanal.',preco:19.9,quantidade_estoque:12,imagem_url:'sabonete-floral.png'},{produto:'Sabonete de Lavanda',descricao:'Perfume suave para um banho relaxante.',preco:24.9,quantidade_estoque:8,imagem_url:'sabonete-lavanda.png'},{produto:'Óleo Corporal',descricao:'Cuidado perfumado para sua rotina.',preco:39.9,quantidade_estoque:6,imagem_url:'oleo-corporal.png'},{produto:'Kit Artesanal',descricao:'Seleção especial para presentear.',preco:79.9,quantidade_estoque:4,imagem_url:'kit-artesanal.png'}];
-let cart=[],catalog=[];const grid=document.querySelector('#grid'),statusBox=document.querySelector('#status'),money=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const demo=[{id:'d1',produto:'Sabonete Floral',descricao:'Aroma delicado e acabamento artesanal.',preco:19.9,quantidade_estoque:12,imagem_url:'sabonete-floral.png'},{id:'d2',produto:'Sabonete de Lavanda',descricao:'Perfume suave para um banho relaxante.',preco:24.9,quantidade_estoque:8,imagem_url:'sabonete-lavanda.png'},{id:'d3',produto:'Óleo Corporal',descricao:'Cuidado perfumado para sua rotina.',preco:39.9,quantidade_estoque:6,imagem_url:'oleo-corporal.png'},{id:'d4',produto:'Kit Artesanal',descricao:'Seleção especial para presentear.',preco:79.9,quantidade_estoque:4,imagem_url:'kit-artesanal.png'}];
+
+const $=s=>document.querySelector(s);
+const money=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const grid=$('#grid'),statusBox=$('#status');
+let cart=[],catalog=[],lastOrder=null,client=null;
+const configured=SUPABASE_URL.startsWith('https://')&&!SUPABASE_URL.includes('COLE_')&&!SUPABASE_ANON_KEY.includes('COLE_');
+if(configured&&window.supabase)client=supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);
+
+function setLoading(btn,on){
+  if(!btn)return;
+  if(on){btn.dataset.html=btn.innerHTML;btn.innerHTML='<span class="spin"></span>Carregando...';btn.disabled=true}
+  else{if(btn.dataset.html!==undefined)btn.innerHTML=btn.dataset.html;btn.disabled=false}
+}
+function openM(m){m.classList.add('open');document.body.classList.add('modal-open')}
+function closeM(m){m.classList.remove('open');if(!document.querySelector('.modal.open'))document.body.classList.remove('modal-open')}
 function imageUrl(value){const src=String(value||'').trim();if(!src)return'';if(/^https?:\/\//i.test(src)||src.startsWith('data:')||src.startsWith('/'))return src;return GITHUB_IMAGE_BASE?GITHUB_IMAGE_BASE.replace(/\/$/,'')+'/'+src.replace(/^\//,''):src}
-function updateCartBadge(){const count=cart.reduce((n,i)=>n+i.quantidade,0);document.querySelector('.cart span').textContent=count+' '+(count===1?'item':'itens')}
-function addToCart(p,q){const found=cart.find(i=>i.id===p.id);if(found)found.quantidade=Math.min(found.estoque,found.quantidade+q);else cart.push({id:p.id,nome:p.produto,preco:+p.preco||0,quantidade:q,estoque:+p.quantidade_estoque||0});updateCartBadge()}
-function render(list){catalog=list||[];renderCustomProducts();grid.innerHTML='';list.forEach(p=>{const stock=Math.max(0,+p.quantidade_estoque||0),src=imageUrl(p.imagem_supabase_url||p.imagem_url),el=document.createElement('article');el.className='card';el.innerHTML=`<div class="pic">${src?`<img src="${esc(src)}" alt="${esc(p.produto)}" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><i class="fa-solid fa-spa" hidden></i>`:'<i class="fa-solid fa-spa"></i>'}</div><div class="info"><h3>${esc(p.produto)}</h3><p class="desc">${esc(p.descricao||'Produto artesanal Luli.')}</p><p class="stock">${stock?stock+' em estoque':'Esgotado'}</p><div class="price">${money.format(+p.preco||0)}</div><div class="actions"><input type="number" min="1" max="${stock}" value="1" ${stock?'':'disabled'}><button ${stock?'':'disabled'}>Adicionar</button></div></div>`;el.querySelector('button').onclick=()=>{const q=Math.max(1,Math.min(stock,+el.querySelector('input').value||1));addToCart(p,q)};grid.append(el)});statusBox.hidden=true}
-async function load(){const ok=SUPABASE_URL.startsWith('https://')&&!SUPABASE_URL.includes('COLE_')&&!SUPABASE_ANON_KEY.includes('COLE_');if(!ok){statusBox.textContent='Modo demonstração: configure o Supabase e a base de imagens do GitHub no final do arquivo.';render(demo);statusBox.hidden=false;return}try{const client=supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);const{data,error}=await client.from('produtos').select('*').eq('ativo',true).order('id',{ascending:false});if(error)throw error;render(data||[]);if(!data?.length){statusBox.textContent='Nenhum produto ativo cadastrado.';statusBox.hidden=false}}catch(error){console.error(error);statusBox.textContent='Falha ao carregar o catálogo. Exibindo demonstração.';render(demo);statusBox.hidden=false}}
-function renderCustomProducts(){const root=document.querySelector('#customProducts');if(!root)return;const available=catalog.filter(p=>p.ativo!==false&&p.permite_personalizacao!==false);document.querySelector('#volumeHint').textContent='Selecione os itens e escolha o volume permitido para cada produto.';root.innerHTML=available.map((p,i)=>{const src=imageUrl(p.imagem_supabase_url||p.imagem_url),min=Math.max(1,+p.volume_min_ml||50),max=Math.max(min,+p.volume_max_ml||1000),step=Math.max(1,+p.volume_step_ml||50),qmin=Math.max(1,+p.pedido_minimo||1),qmax=Math.max(qmin,+p.pedido_maximo||100);let options='';for(let v=min;v<=max;v+=step)options+=`<option value="${v}">${v>=1000&&v%1000===0?(v/1000)+' L':v+' ml'}</option>`;if((max-min)%step!==0)options+=`<option value="${max}">${max>=1000&&max%1000===0?(max/1000)+' L':max+' ml'}</option>`;return `<article class="custom-product">${src?`<img src="${esc(src)}" alt="${esc(p.produto)}" onerror="this.hidden=true">`:'<span class="custom-placeholder">✿</span>'}<div><label><input class="select-product" type="checkbox" data-index="${i}"> ${esc(p.produto)}</label><small>${esc(p.descricao||'Artesanal Luli')}</small></div><div><small>Volume</small><select class="custom-volume">${options}</select></div><div><small>Unidades</small><input class="custom-quantity" type="number" min="${qmin}" max="${qmax}" step="1" value="${qmin}"></div></article>`}).join('')||'<p class="hint">Nenhum produto está habilitado para personalização. Você ainda pode descrever abaixo o que procura.</p>';root.querySelectorAll('input,select').forEach(e=>e.addEventListener('input',updatePreview));root.querySelectorAll('.select-product').forEach(e=>e.addEventListener('change',updatePreview))}
-const cartModal=document.querySelector('#cartModal'),cartList=document.querySelector('#cartList'),cartTotal=document.querySelector('#cartTotal');
-function renderCart(){if(!cart.length){cartList.innerHTML='<div class="empty-cart">Seu carrinho está vazio.</div>';cartTotal.textContent='';document.querySelector('#sendCart').disabled=true;document.querySelector('#clearCart').disabled=true;return}document.querySelector('#sendCart').disabled=false;document.querySelector('#clearCart').disabled=false;cartList.innerHTML=cart.map((i,n)=>`<div class="cart-row"><div><h3>${esc(i.nome)}</h3><small>${i.quantidade} × ${money.format(i.preco)} = ${money.format(i.quantidade*i.preco)}</small></div><button class="remove-item" type="button" data-index="${n}" aria-label="Remover ${esc(i.nome)}"><i class="fa-solid fa-xmark"></i></button></div>`).join('');cartTotal.textContent='Total: '+money.format(cart.reduce((t,i)=>t+i.preco*i.quantidade,0));cartList.querySelectorAll('.remove-item').forEach(b=>b.onclick=()=>{cart.splice(+b.dataset.index,1);updateCartBadge();renderCart()})}
-function openCart(){renderCart();cartModal.classList.add('open');document.body.classList.add('modal-open')}
-function closeCart(){cartModal.classList.remove('open');document.body.classList.remove('modal-open')}
-function buildCartMessage(){const lines=cart.map(i=>`• ${i.nome} — ${i.quantidade} unidade${i.quantidade===1?'':'s'} — ${money.format(i.preco*i.quantidade)}`);return `Olá, Luli! Gostaria de fazer este pedido:\n\n${lines.join('\n')}\n\nTotal: ${money.format(cart.reduce((t,i)=>t+i.preco*i.quantidade,0))}\n\nPoderia confirmar a disponibilidade e o prazo?`}
-document.querySelector('.cart').onclick=openCart;document.querySelector('#closeCart').onclick=closeCart;cartModal.addEventListener('click',e=>{if(e.target===cartModal)closeCart()});document.querySelector('#clearCart').onclick=()=>{cart=[];updateCartBadge();renderCart()};document.querySelector('#sendCart').onclick=()=>{if(cart.length)window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildCartMessage())}`,'_blank','noopener,noreferrer')};
-const modal=document.querySelector('#customModal'),form=document.querySelector('#customForm'),preview=document.querySelector('#messagePreview'),openBtn=document.querySelector('#openCustom'),closeBtn=document.querySelector('#closeCustom');
-function buildMessage(){const chosen=[...document.querySelectorAll('.custom-product')].filter(c=>c.querySelector('.select-product').checked).map(c=>{const name=c.querySelector('label').textContent.trim(),ml=+c.querySelector('.custom-volume').value||50,q=+c.querySelector('.custom-quantity').value||1;return `• ${name} — ${ml>=1000?(ml/1000)+' L':ml+' ml'} — ${q} unidade${q===1?'':'s'}`}),notes=document.querySelector('#notes').value.trim(),request=document.querySelector('#requestText').value.trim(),unknown=document.querySelector('#unknownProduct').checked;return `Olá, Luli! Gostaria de montar um pedido personalizado.${chosen.length?'\n\nProdutos escolhidos:\n'+chosen.join('\n'):''}${unknown?'\n\nProduto que não encontrei: '+(request||'[vou descrever o que procuro]'):''}${notes?'\n\nObservações: '+notes:''}\n\nPoderia informar o valor e o prazo de produção?`}
-function updatePreview(){preview.textContent=buildMessage()}
-function openModal(){modal.classList.add('open');document.body.classList.add('modal-open');updatePreview();setTimeout(()=>document.querySelector('.select-product')?.focus()||document.querySelector('#unknownProduct').focus(),50)}
-function closeModal(){modal.classList.remove('open');document.body.classList.remove('modal-open');openBtn.focus()}
-openBtn.onclick=openModal;closeBtn.onclick=closeModal;modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(modal.classList.contains('open'))closeModal();if(cartModal.classList.contains('open'))closeCart()}});form.addEventListener('input',updatePreview);document.querySelector('#unknownProduct').onchange=e=>{document.querySelector('#requestText').hidden=!e.target.checked;updatePreview()};form.addEventListener('submit',e=>{e.preventDefault();if(!document.querySelector('.select-product:checked')&&!document.querySelector('#unknownProduct').checked){alert('Escolha ao menos um produto ou marque que não encontrou o que procura.');return}if(!form.reportValidity())return;window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildMessage())}`,'_blank','noopener,noreferrer')});document.querySelector('#copyMessage').onclick=async()=>{try{await navigator.clipboard.writeText(buildMessage());document.querySelector('#copyMessage').innerHTML='<i class="fa-solid fa-check"></i> Mensagem copiada';setTimeout(()=>document.querySelector('#copyMessage').innerHTML='<i class="fa-regular fa-copy"></i> Copiar mensagem',1800)}catch{alert('Não foi possível copiar automaticamente. Selecione a mensagem na prévia.')}};document.querySelectorAll('.whatsapp-link').forEach(a=>a.href=`https://wa.me/${WHATSAPP_NUMBER}`);document.querySelector('#year').textContent=new Date().getFullYear();updatePreview();load();
+function todayLocal(){return new Date(Date.now()-new Date().getTimezoneOffset()*60000).toISOString().slice(0,10)}
+
+/* ---------- Carrinho ---------- */
+function cartTotalValue(){return cart.reduce((t,i)=>t+i.preco*i.quantidade,0)}
+function updateCartBadge(){const count=cart.reduce((n,i)=>n+i.quantidade,0);$('.cart span').textContent=count+' '+(count===1?'item':'itens')}
+function addToCart(p,q){
+  const key=String(p.id);
+  const found=cart.find(i=>i.key===key&&!i.personalizado);
+  if(found)found.quantidade=Math.min(found.estoque,found.quantidade+q);
+  else cart.push({key,id:p.id,nome:p.produto,preco:+p.preco||0,quantidade:q,estoque:+p.quantidade_estoque||0,personalizado:false,obs:''});
+  updateCartBadge();
+}
+function addCustomToCart(p,q,desc){
+  cart.push({key:'c-'+p.id+'-'+Date.now()+'-'+Math.random().toString(36).slice(2,6),id:p.id,nome:p.produto,preco:+p.preco||0,quantidade:q,estoque:Infinity,personalizado:true,obs:desc});
+  updateCartBadge();
+}
+function itemRowHtml(i,n,removable){
+  return `<div class="cart-row"><div><h3>${esc(i.nome)}${i.personalizado?' <small style="display:inline">(personalizado)</small>':''}</h3><small>${i.quantidade} × ${money.format(i.preco)} = ${money.format(i.quantidade*i.preco)}</small>${i.personalizado&&i.obs?`<small>Personalização: ${esc(i.obs)}</small>`:''}</div>${removable?`<button class="remove-item" type="button" data-index="${n}" aria-label="Remover ${esc(i.nome)}"><i class="fa-solid fa-xmark"></i></button>`:''}</div>`;
+}
+function renderCart(){
+  const empty=!cart.length;
+  $('#goCheckout').disabled=empty;$('#clearCart').disabled=empty;
+  if(empty){$('#cartList').innerHTML='<div class="empty-cart">Seu carrinho está vazio.</div>';$('#cartTotal').textContent='';return}
+  $('#cartList').innerHTML=cart.map((i,n)=>itemRowHtml(i,n,true)).join('');
+  $('#cartTotal').textContent='Total: '+money.format(cartTotalValue());
+  $('#cartList').querySelectorAll('.remove-item').forEach(b=>b.onclick=()=>{cart.splice(+b.dataset.index,1);updateCartBadge();renderCart()});
+}
+const cartModal=$('#cartModal'),checkoutModal=$('#checkoutModal'),customModal=$('#customModal');
+function openCart(){renderCart();openM(cartModal)}
+$('.cart').onclick=openCart;
+$('#closeCart').onclick=()=>closeM(cartModal);
+cartModal.addEventListener('click',e=>{if(e.target===cartModal)closeM(cartModal)});
+$('#clearCart').onclick=()=>{cart=[];updateCartBadge();renderCart()};
+
+/* ---------- Checkout ---------- */
+function itemsText(){
+  return cart.map(i=>`${i.quantidade}x ${i.nome}${i.personalizado?' (personalizado: '+(i.obs||'sem descrição')+')':''}`).join('; ');
+}
+function openCheckout(){
+  if(!cart.length)return;
+  closeM(cartModal);
+  $('#checkoutStep1').hidden=false;$('#checkoutDone').hidden=true;
+  $('#checkoutItems').innerHTML=cart.map((i,n)=>itemRowHtml(i,n,false)).join('');
+  $('#checkoutTotal').textContent='Total: '+money.format(cartTotalValue());
+  openM(checkoutModal);
+}
+$('#goCheckout').onclick=openCheckout;
+$('#backToCart').onclick=()=>{closeM(checkoutModal);openCart()};
+$('#closeCheckout').onclick=()=>closeM(checkoutModal);
+checkoutModal.addEventListener('click',e=>{if(e.target===checkoutModal)closeM(checkoutModal)});
+
+$('#checkoutForm').addEventListener('submit',async e=>{
+  e.preventDefault();
+  if(!cart.length)return;
+  const btn=$('#coSubmit');
+  setLoading(btn,true);
+  try{
+    if(!client)throw new Error('O catálogo está em modo demonstração: configure o Supabase para registrar pedidos.');
+    const cliente=$('#coCliente').value.trim(),pay=document.querySelector('input[name=pay]:checked').value,obs=$('#coObs').value.trim();
+    const total=+cartTotalValue().toFixed(2);
+    const linhas=cart.map(i=>`• ${i.nome} — ${i.quantidade} un. — ${money.format(i.preco*i.quantidade)}${i.personalizado?'\n   Personalização: '+(i.obs||'-'):''}`);
+    const row={data_venda:todayLocal(),cliente,produto_descricao:itemsText(),quantidade:1,valor_unitario:total,desconto:0,forma_pagamento:pay,status:'Pendente',observacoes:obs};
+    const {data,error}=await client.from('lancamentos_vendas').insert(row).select('id').single();
+    if(error)throw error;
+    lastOrder={id:data.id,cliente,pay,total,linhas,obs};
+    cart=[];updateCartBadge();
+    showDone();
+  }catch(err){
+    console.error(err);
+    alert('Não foi possível registrar o pedido. '+(err.message||'Tente novamente.'));
+  }finally{setLoading(btn,false)}
+});
+
+function showDone(){
+  const o=lastOrder;
+  $('#checkoutStep1').hidden=true;$('#checkoutDone').hidden=false;
+  $('#doneId').textContent='Pedido #'+o.id;
+  $('#doneInfo').textContent=o.pay==='Pix'?'Faça o pagamento com a chave Pix abaixo e depois acompanhe seu pedido pelo WhatsApp.':'Agora acompanhe seu pedido pelo WhatsApp para combinar o pagamento ('+o.pay.toLowerCase()+') e a entrega.';
+  $('#pixBox').hidden=o.pay!=='Pix';
+  $('#pixKey').textContent=PIX_KEY;
+  $('#pixValue').textContent=money.format(o.total);
+}
+$('#copyPix').onclick=async()=>{
+  const b=$('#copyPix');
+  try{await navigator.clipboard.writeText(PIX_KEY);b.innerHTML='<i class="fa-solid fa-check"></i> Chave copiada';setTimeout(()=>b.innerHTML='<i class="fa-regular fa-copy"></i> Copiar chave Pix',1800)}
+  catch{alert('Não foi possível copiar automaticamente. Selecione a chave e copie.')}
+};
+function buildTrackMessage(){
+  const o=lastOrder;
+  return `Olá, Luli! Acabei de fazer o pedido #${o.id}.\n\nCliente: ${o.cliente}\n\nItens:\n${o.linhas.join('\n')}\n\nTotal: ${money.format(o.total)}\nPagamento: ${o.pay}${o.obs?'\nObservações: '+o.obs:''}\n\nPoderia confirmar o pedido?`;
+}
+$('#trackBtn').onclick=()=>{if(lastOrder)window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildTrackMessage())}`,'_blank','noopener,noreferrer')};
+
+/* ---------- Catálogo ---------- */
+function render(list){
+  catalog=list||[];renderCustomProducts();grid.innerHTML='';
+  catalog.forEach(p=>{
+    const stock=Math.max(0,+p.quantidade_estoque||0),src=imageUrl(p.imagem_supabase_url||p.imagem_url),el=document.createElement('article');
+    el.className='card';
+    el.innerHTML=`<div class="pic">${src?`<img src="${esc(src)}" alt="${esc(p.produto)}" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><i class="fa-solid fa-spa" hidden></i>`:'<i class="fa-solid fa-spa"></i>'}</div><div class="info"><h3>${esc(p.produto)}</h3><p class="desc">${esc(p.descricao||'Produto artesanal Luli.')}</p><p class="stock">${stock?stock+' em estoque':'Esgotado'}</p><div class="price">${money.format(+p.preco||0)}</div><div class="actions"><input type="number" min="1" max="${stock}" value="1" ${stock?'':'disabled'}><button ${stock?'':'disabled'}>Adicionar</button></div></div>`;
+    el.querySelector('button').onclick=()=>{const q=Math.max(1,Math.min(stock,+el.querySelector('input').value||1));addToCart(p,q)};
+    grid.append(el);
+  });
+  statusBox.hidden=true;
+}
+async function load(){
+  if(!client){statusBox.textContent='Modo demonstração: configure o Supabase e a base de imagens do GitHub no final do arquivo.';render(demo);statusBox.hidden=false;return}
+  try{
+    const{data,error}=await client.from('produtos').select('*').eq('ativo',true).order('id',{ascending:false});
+    if(error)throw error;
+    render(data||[]);
+    if(!data?.length){statusBox.textContent='Nenhum produto ativo cadastrado.';statusBox.hidden=false}
+  }catch(error){console.error(error);statusBox.textContent='Falha ao carregar o catálogo. Exibindo demonstração.';render(demo);statusBox.hidden=false}
+}
+
+/* ---------- Pedido personalizado ---------- */
+let customList=[];
+function renderCustomProducts(){
+  const root=$('#customProducts');if(!root)return;
+  customList=catalog.filter(p=>p.ativo!==false&&p.permite_personalizacao!==false);
+  root.innerHTML=customList.map((p,i)=>{
+    const src=imageUrl(p.imagem_supabase_url||p.imagem_url);
+    return `<article class="custom-product"><input class="select-product" type="checkbox" data-index="${i}" aria-label="Selecionar ${esc(p.produto)}">${src?`<img src="${esc(src)}" alt="${esc(p.produto)}" onerror="this.hidden=true">`:'<span class="custom-placeholder">✿</span>'}<div><b>${esc(p.produto)}</b><small>${esc(p.descricao||'Artesanal Luli')}</small><small>${money.format(+p.preco||0)} cada</small></div><div><small>Unidades</small><input class="custom-quantity" type="number" min="1" max="999" step="1" value="1"></div></article>`;
+  }).join('')||'<p class="hint">Nenhum produto está habilitado para personalização no momento.</p>';
+  root.querySelectorAll('.custom-quantity').forEach(inp=>inp.addEventListener('input',()=>{inp.closest('.custom-product').querySelector('.select-product').checked=true}));
+}
+$('#openCustom').onclick=()=>{openM(customModal);setTimeout(()=>$('.select-product')?.focus(),50)};
+function closeCustom(){closeM(customModal);$('#openCustom').focus()}
+$('#closeCustom').onclick=closeCustom;
+customModal.addEventListener('click',e=>{if(e.target===customModal)closeCustom()});
+$('#customForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const chosen=[...document.querySelectorAll('.custom-product')].filter(c=>c.querySelector('.select-product').checked);
+  if(!chosen.length){alert('Escolha ao menos um produto como base.');return}
+  const desc=$('#customDesc').value.trim();
+  if(!desc){alert('Descreva a personalização desejada.');return}
+  chosen.forEach(c=>{
+    const p=customList[+c.querySelector('.select-product').dataset.index];
+    const q=Math.max(1,parseInt(c.querySelector('.custom-quantity').value)||1);
+    addCustomToCart(p,q,desc);
+  });
+  $('#customForm').reset();
+  closeM(customModal);
+  openCart();
+});
+
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal.open').forEach(m=>closeM(m))});
+document.querySelectorAll('.whatsapp-link').forEach(a=>a.href=`https://wa.me/${WHATSAPP_NUMBER}`);
+$('#year').textContent=new Date().getFullYear();
+load();
 </script>
 </body>
 </html>
